@@ -1,0 +1,15 @@
+//--------------------------------------------------------------------------
+// Programação Windows: C e Win32 API com ênfase em Multimídia
+// Autor: André Kishimoto
+// ISBN 85-906129-1-0
+// Copyright (c) 2004-2006, André Kishimoto
+//
+// prog03-3-res.rc - Arquivo de recursos
+//--------------------------------------------------------------------------
+
+#include "prog03-3-res.h"
+
+IDI_MEUICONE		ICON		"dados\meuicone.ico"
+IDC_MEUCURSOR		CURSOR		"dados\meucursor.cur"
+IDB_MEUBITMAP		BITMAP		"dados\meubitmap.bmp"
+IDW_MEUSOM		WAVE		"dados\meusom.wav"

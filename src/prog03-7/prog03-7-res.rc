@@ -1,0 +1,38 @@
+//--------------------------------------------------------------------------
+// Programação Windows: C e Win32 API com ênfase em Multimídia
+// Autor: André Kishimoto
+// ISBN 85-906129-1-0
+// Copyright (c) 2004-2006, André Kishimoto
+//
+// prog03-7-res.rc - Arquivo de recursos
+//--------------------------------------------------------------------------
+
+#include <windows.h>
+#include "prog03-7-res.h"
+
+IDM_MEUMENU	MENU
+{
+  POPUP "&Caixa de Diálogo"
+  {
+    MENUITEM "Abrir Modal...",		IDM_CAIXA_ABRIR_MODAL
+    MENUITEM "Abrir Modeless...",	IDM_CAIXA_ABRIR_MODELESS
+    MENUITEM SEPARATOR
+    MENUITEM "Sai&r",			IDM_CAIXA_SAIR
+  }
+}
+
+IDD_MEUDIALOGO		DIALOGEX	0, 0, 200, 162
+CAPTION "Minha Caixa de Diálogo"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+STYLE DS_SETFONT | DS_CENTER | WS_CAPTION | WS_SYSMENU
+{
+    CTEXT           "Minha Caixa de Diálogo v1.0", IDC_STATIC, 0, 10, 201, 10
+    CTEXT           "Copyright (c) 2004, André Kishimoto", IDC_STATIC, 0, 20, 201, 10
+    EDITTEXT        IDC_EDIT1, 10, 40, 180, 15, ES_CENTER
+    CONTROL         "Mostrar mensagem", IDC_CHECKBOX1, "Button", BS_AUTO3STATE | WS_TABSTOP, 10, 60, 78, 15
+    PUSHBUTTON      "Fechar", IDC_BOTAO1, 130, 80, 60, 15
+    GROUPBOX        "Teste", -1, 10, 80, 75, 70
+    CONTROL         "Radio1", IDC_RADIO1, "Button", BS_AUTORADIOBUTTON | WS_GROUP, 16, 92, 60, 19
+    CONTROL         "Radio2", IDC_RADIO2, "Button", BS_AUTORADIOBUTTON, 16, 108, 56, 19
+    CONTROL         "Radio3", IDC_RADIO3, "Button", BS_AUTORADIOBUTTON, 16, 128, 49, 14
+}

@@ -1,0 +1,46 @@
+//--------------------------------------------------------------------------
+// Programação Windows: C e Win32 API com ênfase em Multimídia
+// Autor: André Kishimoto
+// ISBN 85-906129-1-0
+// Copyright (c) 2004-2006, André Kishimoto
+//
+// prog03-6-res.rc - Arquivo de recursos
+//--------------------------------------------------------------------------
+
+#include <windows.h>
+#include "prog03-6-res.h"
+
+IDI_MEUICONE            ICON                    "meuicone.ico"
+IDC_MEUCURSOR           CURSOR                  "meucursor.cur"
+
+
+IDM_MEUMENU	MENU
+{
+  POPUP "Menu &1"
+  {
+    MENUITEM "Item &1", ID_DO_MENU1_ITEM1
+    MENUITEM "Item &2", ID_DO_MENU1_ITEM2
+    MENUITEM "Item &X", ID_DO_MENU1_ITEMX
+  }
+  POPUP "Menu &2"
+  {
+    MENUITEM "Item &1", ID_DO_MENU2_ITEM1
+    MENUITEM "Item &2", ID_DO_MENU2_ITEM2
+    POPUP "Item &3"
+    {
+      MENUITEM "Item 3.&1", ID_DO_MENU2_ITEM3_1
+      MENUITEM "Item 3.&2", ID_DO_MENU2_ITEM3_2
+      MENUITEM "Item 3.&X", ID_DO_MENU2_ITEM3_X
+    }
+    MENUITEM SEPARATOR
+    MENUITEM "Item &X", ID_DO_MENU2_ITEMX
+  }
+}
+
+IDA_MEUATALHO	ACCELERATORS
+{
+  "1", ID_DO_MENU1_ITEM1, ALT
+  VK_F2, ID_DO_MENU1_ITEM2, VIRTKEY
+  "^X", ID_DO_MENU1_ITEMX
+  VK_ESCAPE, IDA_ATALHO_ESC, VIRTKEY
+}

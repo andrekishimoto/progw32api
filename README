@@ -7,3 +7,74 @@
 
 Esse repositório contém o código-fonte dos programas-exemplo do e-book
 "Programação Windows: C e Win32 API com ênfase em Multimídia"
+
+
+Projeto		Descrição/Observações
+-------------------------------------------------------------------------------
+prog01		Programa Windows estilo "Hello World!"
+
+prog02		Esqueleto completo de um programa Windows
+
+prog03-1	Ícones personalizados
+
+prog03-2	Novos cursores
+
+prog03-3	Bitmaps e sons
+
+prog03-4	Informações sobre a versão do programa (recurso VERSIONINFO)
+			# No Windows Explorer, clicar com o botão direito do mouse no
+			# arquivo executável e ir em Propriedades, aba "Versão"
+
+prog03-5	Menus e teclas de atalho
+
+prog03-6	Menus pop-up
+			# Clicar com o botão direito do mouse na área útil do programa
+
+prog03-7	Caixa de diálogo modal e modeless
+
+prog04-1	Processando mensagens do teclado e GDI
+			# Pressionar qualquer tecla durante execução do programa
+
+prog04-2	Processando mensagens do mouse e GDI
+			# Pressionar botão esquerdo e/ou direito do mouse durante a
+			# execução do programa
+
+prog05-1	Plotando pontos no programa
+
+prog05-2	Desenhando linhas retas
+
+prog05-3	Desenhando linhas curvas
+
+prog05-4	Desenhando retângulos
+
+prog05-5	Desenhando elipses
+
+prog05-6	Desenhando polígonos
+
+prog05-7	Inversão de cores e preenchimento de áreas
+
+prog05-8	Simples programa de desenho
+			# Selecionar tipo de desenho com as teclas 1, 2 e 3 e usar o
+			# botão esquerdo do mouse para desenhar
+
+prog06-1	Mostrando bitmaps com BitBlt() e StretchBlt()
+
+prog06-2	DIB Section
+			# Arquivo bitmap_info.txt é criado durante execução do programa
+
+prog07-1	Regiões
+
+prog07-2	Janelas não-retangulares
+
+prog08-1	Reproduzindo sons wave e MIDI
+			# Usar teclas F1, F2, F3, F4, F5 e F6
+
+prog08-2	Uso de timers
+			# Usar teclas F1, F2, F3 e F4
+
+prog09-1	Arquivos
+			# Arquivo dados.txt é criado/apagado
+
+prog09-2	Registro do Windows
+			# Modificação no registro do Windows ocorre em
+			# HKEY_LOCAL_MACHINE\SOFTWARE\___prog09-2

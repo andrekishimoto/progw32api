@@ -1,0 +1,22 @@
+//--------------------------------------------------------------------------
+// Programação Windows: C e Win32 API com ênfase em Multimídia
+// Autor: André Kishimoto
+// ISBN 85-906129-1-0
+// Copyright (c) 2004-2006, André Kishimoto
+//
+// prog09-2-res.rc - Arquivo de recursos
+//--------------------------------------------------------------------------
+
+#include <windows.h>
+#include "prog09-2-res.h"
+
+IDM_MEUMENU	MENU
+{
+  POPUP "&Opções"
+  {
+    MENUITEM "&Obter um valor do registro", IDM_LER
+    MENUITEM "&Criar chave e gravar valor no registro", IDM_CRIAR
+    MENUITEM "&Excluir chave e valor do registro", IDM_EXCLUIR
+    MENUITEM "Sai&r", IDM_SAIR
+  }
+}

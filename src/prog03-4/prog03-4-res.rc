@@ -1,0 +1,45 @@
+//--------------------------------------------------------------------------
+// Programação Windows: C e Win32 API com ênfase em Multimídia
+// Autor: André Kishimoto
+// ISBN 85-906129-1-0
+// Copyright (c) 2004-2006, André Kishimoto
+//
+// prog03-4-res.rc - Arquivo de recursos
+//--------------------------------------------------------------------------
+
+#include <windows.h>
+#include "prog03-4-res.h"
+
+IDI_MEUICONE            ICON                    "meuicone.ico"
+IDC_MEUCURSOR           CURSOR                  "meucursor.cur"
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK 0x17L
+FILEFLAGS 0x0L
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "041604e4"
+    BEGIN
+      VALUE "CompanyName", "André Kishimoto"
+      VALUE "FileDescription", "Uso de recursos - VERSIONINFO"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "prog03-4"
+      VALUE "LegalCopyright", "Copyright © 2004, André Kishimoto"
+      VALUE "OriginalFilename", "prog03-4.exe"
+      VALUE "ProductName", "Uso de recursos - VERSIONINFO"
+      VALUE "ProductVersion", "1.0"
+      VALUE "Comentários", "Pode escrever qualquer coisa"
+      VALUE "...psiu!", "Programar jogos é muito legal!"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x416, 1252
+  END
+END
